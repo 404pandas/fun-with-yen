@@ -33,6 +33,7 @@ Letter.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'letter',
+    timestamps: false,
   }
 );
 

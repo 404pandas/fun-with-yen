@@ -32,6 +32,7 @@ Number.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'number',
+    timestamps: false,
   }
 );
 

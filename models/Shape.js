@@ -32,6 +32,7 @@ Shape.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'shape',
+    timestamps: false, // Disable timestamps for this model
   }
 );
 
