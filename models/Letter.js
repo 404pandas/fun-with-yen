@@ -11,6 +11,10 @@ Letter.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    file_path: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   },
   {
     sequelize,
