@@ -1,10 +1,11 @@
 const sequelize = require('../config/connection');
-const { User, Number, Shape, Letter } = require('../models');
+const { User, Number, Shape, Letter, Favorites } = require('../models');
 
 const userData = require('./userData.json');
 const numberData = require('./numberData.json');
 const shapeData = require('./shapeData.json');
 const letterData = require('./letterData.json');
+const favoritesData = require('./favoriteData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -33,6 +34,11 @@ const seedDatabase = async () => {
     });
   }
 
+  for (const favorite of favoritesData) {
+    await Favorites.create({
+      ...favorite,
+    });
+  }
   process.exit(0);
 };
 

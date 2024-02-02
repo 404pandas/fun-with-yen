@@ -18,20 +18,20 @@ Favorites.init(
         key: 'id',
       },
     },
-    shape_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'shape',
-        key: 'id',
-      },
-    },
-    number_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'number',
-        key: 'id',
-      },
-    },
+    // shape_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'shape',
+    //     key: 'id',
+    //   },
+    // },
+    // number_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'number',
+    //     key: 'id',
+    //   },
+    // },
     letter_id: {
       type: DataTypes.INTEGER,
       references: {

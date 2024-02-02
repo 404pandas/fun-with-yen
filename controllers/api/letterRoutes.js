@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Letter } = require('../../models/');
 
+// tested and working as expected in Insomnia Feb 2 12:16PM
 router.get('/', async (req, res) => {
   try {
     Letter.findAll().then((letterData) => {

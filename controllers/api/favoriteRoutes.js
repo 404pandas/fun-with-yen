@@ -4,14 +4,14 @@ const { withGuard } = require('../../utils/authGuard');
 
 // Adds to favorites
 router.post('/', withGuard, async (req, res) => {
-  console.log('test');
+  console.log('Favorite attempting to be added');
   try {
     const favoriteData = await Favorites.findOne({
       where: {
         user_id: req.session.user_id,
         letter_id: req.body.letter_id,
-        number_id: req.body.number_id,
-        shape_id: req.body.shape_id,
+        // number_id: req.body.number_id,
+        // shape_id: req.body.shape_id,
       },
     });
     console.log('favoriteData');
@@ -20,13 +20,17 @@ router.post('/', withGuard, async (req, res) => {
       const newFavorite = await Favorites.create({
         user_id: req.session.user_id,
         letter_id: req.body.letter_id,
-        number_id: req.body.number_id,
-        shape_id: req.body.shape_id,
+        // number_id: req.body.number_id,
+        // shape_id: req.body.shape_id,
       });
+      console.log('newFavorite');
+      console.log(newFavorite);
+
       return res.json(newFavorite);
     }
     res.json(favoriteData);
   } catch (err) {
+    console.log('There was an error');
     res.status(500).json(err);
   }
 });
