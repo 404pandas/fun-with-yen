@@ -12,7 +12,17 @@
   </head>
 
   <body>
-    
+    <nav>
+      <a href='/'>Home</a>
+      {{#if loggedIn}}
+        <button id='logout'>Logout</button>
+      {{else}}
+        <a href='/login'>Login/Signup</a>
+      {{/if}}
+    </nav>
+    {{#if loggedIn}}
+      <script src='../../public/js/logout.js'></script>
+    {{/if}}
   </body>
 
 </html>
