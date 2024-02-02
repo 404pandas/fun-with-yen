@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 // CREATE new user
+// Tested with Insomnia and working as expected Feb 1 2024 10:57PM
 router.post('/', async (req, res) => {
   // try/catch req.session
   try {
@@ -24,6 +25,7 @@ router.post('/', async (req, res) => {
 });
 
 // LOGIN user
+// Tested with Insomnia and working as expected Feb 1 2024 11:20PM
 router.post('/login', async (req, res) => {
   // try/catch User.findOne- req.body.username
   try {
@@ -37,17 +39,17 @@ router.post('/login', async (req, res) => {
     if (!dbUserData) {
       res
         .status(400)
-        .json({ message: 'Incorrect email or password. Please try again!' });
+        .json({ message: 'Incorrect username! Please try again!' });
       return;
     }
 
     // verifies enter password matches stored password in database
-    const validPassword = await dbUserData.checkPassword(req.body.password);
+    const validPassword = dbUserData.checkPassword(req.body.password);
 
     if (!validPassword) {
       res
         .status(400)
-        .json({ message: 'Incorrect email or password. Please try again!' });
+        .json({ message: 'Incorrect password. Please try again!' });
       return;
     }
 
@@ -64,6 +66,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
+// TODO- debug and get successful test
 router.post('/logout', (req, res) => {
   // destroys session when user logs out
   if (req.session.loggedIn) {

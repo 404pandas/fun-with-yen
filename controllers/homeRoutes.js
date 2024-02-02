@@ -11,9 +11,21 @@ router.get('/letters', async (req, res) => {});
 router.get('/shapes', async (req, res) => {});
 
 // GET login
-router.get('/login', withoutGuard, (req, res) => {});
+router.get('/login', withoutGuard, (req, res) => {
+  try {
+    res.render('login');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 // GET signup
-router.get('/signup', withoutGuard, (req, res) => {});
+router.get('/signup', withoutGuard, (req, res) => {
+  try {
+    res.render('signup');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
