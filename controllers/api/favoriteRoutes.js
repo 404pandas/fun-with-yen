@@ -6,6 +6,8 @@ const { withGuard } = require('../../utils/authGuard');
 router.post('/', withGuard, async (req, res) => {
   console.log('Favorite attempting to be added');
   try {
+    console.log(req.body);
+    console.log(req.session);
     const favoriteData = await Favorites.findOne({
       where: {
         user_id: req.session.user_id,
