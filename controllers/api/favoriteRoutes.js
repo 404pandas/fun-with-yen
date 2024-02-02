@@ -1,9 +1,10 @@
 const router = require('express').Router();
 const { Favorites } = require('../../models');
-const withAuth = require('../../utils/auth');
+// const withGuard = require('../../utils/authGuard');
 
 // Adds to favorites
-router.post('/', withAuth, async (req, res) => {
+router.post('/', async (req, res) => {
+  console.log('test');
   try {
     const favoriteData = await Favorites.findOne({
       where: {
@@ -13,7 +14,8 @@ router.post('/', withAuth, async (req, res) => {
         shape_id: req.body.shape_id,
       },
     });
-
+    console.log('favoriteData');
+    console.log(favoriteData);
     if (!favoriteData) {
       const newFavorite = await Favorites.create({
         user_id: req.session.user_id,
@@ -30,7 +32,7 @@ router.post('/', withAuth, async (req, res) => {
 });
 
 // Deletes from favorites
-router.delete('/:id', withAuth, async (req, res) => {
+router.delete('/:id', async (req, res) => {
   try {
     const favoriteData = await Favorites.destroy({
       where: {
@@ -43,12 +45,10 @@ router.delete('/:id', withAuth, async (req, res) => {
     if (!favoriteData) {
       res.status(404).json({ message: 'No favorite found with that ID' });
     }
-    res
-      .status(200)
-      .json({
-        favoriteData,
-        message: `Successfully deleted favorite with id ${req.params.id}`,
-      });
+    res.status(200).json({
+      favoriteData,
+      message: `Successfully deleted favorite with id ${req.params.id}`,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
