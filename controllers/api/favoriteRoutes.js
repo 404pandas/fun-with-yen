@@ -44,8 +44,8 @@ router.delete('/:id', withGuard, async (req, res) => {
       where: {
         user_id: req.session.user_id,
         letter_id: req.body.letter_id,
-        number_id: req.body.number_id,
-        shape_id: req.body.shape_id,
+        // number_id: req.body.number_id,
+        // shape_id: req.body.shape_id,
       },
     });
     if (!favoriteData) {
