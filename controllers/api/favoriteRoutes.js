@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const { Favorites } = require('../../models');
-// const withGuard = require('../../utils/authGuard');
+const { withGuard } = require('../../utils/authGuard');
 
 // Adds to favorites
-router.post('/', async (req, res) => {
+router.post('/', withGuard, async (req, res) => {
   console.log('test');
   try {
     const favoriteData = await Favorites.findOne({
@@ -32,7 +32,7 @@ router.post('/', async (req, res) => {
 });
 
 // Deletes from favorites
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', withGuard, async (req, res) => {
   try {
     const favoriteData = await Favorites.destroy({
       where: {
