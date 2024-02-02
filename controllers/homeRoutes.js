@@ -1,5 +1,19 @@
 const router = require('express').Router();
+const { Shape, Letter, Number } = require('../models/');
 const { withoutGuard } = require('../utils/authGuard');
+
+// GET home
+router.get('/', async (req, res) => {
+  try {
+    const shapes = await Shape.findAll();
+    const letters = await Letter.findAll();
+    const numbers = await Number.findAll();
+
+    res.render('home', { shapes, letters, numbers });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 // GET all numbers
 router.get('/numbers', async (req, res) => {});

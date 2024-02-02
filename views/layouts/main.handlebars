@@ -5,6 +5,14 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Fun with Yen</title>
     <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'
+    />
+    <link
+      href='https://fonts.googleapis.com/icon?family=Material+Icons'
+      rel='stylesheet'
+    />
+    <link
       href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap'
       rel='stylesheet'
     />
@@ -20,6 +28,9 @@
         <a href='/login'>Login/Signup</a>
       {{/if}}
     </nav>
+    <main>
+      {{{body}}}
+    </main>
     {{#if loggedIn}}
       <script src='../../public/js/logout.js'></script>
     {{/if}}
