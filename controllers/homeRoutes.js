@@ -5,9 +5,13 @@ const { withoutGuard } = require('../utils/authGuard');
 // GET home
 router.get('/', async (req, res) => {
   try {
-    const shapes = await Shape.findAll();
-    const letters = await Letter.findAll();
-    const numbers = await Number.findAll();
+    const shapesData = await Shape.findAll();
+    const lettersData = await Letter.findAll();
+    const numbersData = await Number.findAll();
+
+    const shapes = shapesData.map((shape) => shape.get({ plain: true }));
+    const letters = lettersData.map((letter) => letter.get({ plain: true }));
+    const numbers = numbersData.map((number) => number.get({ plain: true }));
 
     res.render('home', { shapes, letters, numbers });
   } catch (err) {
@@ -27,7 +31,7 @@ router.get('/shapes', async (req, res) => {});
 // GET login
 router.get('/login', withoutGuard, (req, res) => {
   try {
-    res.render('login');
+    res.render('login-signup');
   } catch (err) {
     res.status(500).json(err);
   }
@@ -36,7 +40,7 @@ router.get('/login', withoutGuard, (req, res) => {
 // GET signup
 router.get('/signup', withoutGuard, (req, res) => {
   try {
-    res.render('signup');
+    res.render('login-signup');
   } catch (err) {
     res.status(500).json(err);
   }

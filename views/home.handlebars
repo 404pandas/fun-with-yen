@@ -1,19 +1,29 @@
 <div>
   <h4>Home</h4>
+  <h5>Select an image to trace</h5>
+
+  <h5>Shapes</h5>
+
   {{#each shapes as |shape|}}
-    <div><h5>Select an image to trace</h5>
+    <div>
       <h6>{{shape.name}}</h6>
     </div>
   {{/each}}
+  <h5>Numbers</h5>
+
   {{#each numbers as |number|}}
-    <div><h5>Select an image to trace</h5>
+    <div>
       <h6>{{number.name}}</h6>
 
     </div>
   {{/each}}
+  <h5>Letters</h5>
   {{#each letters as |letter|}}
-    <div><h5>Select an image to trace</h5>
+    <div>
+
       <h6>{{letter.name}}</h6>
     </div>
   {{/each}}
 </div>
+
+<script src='/js/options.js'></script>
