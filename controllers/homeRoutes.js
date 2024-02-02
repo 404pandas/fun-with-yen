@@ -1,25 +1,18 @@
 const router = require('express').Router();
 
-router.get('/', async (req, res) => {
+// GET all numbers
+router.get('/numbers', async (req, res) => {});
 
-});
+// GET all letters
+router.get('/letters', async (req, res) => {});
 
-router.get('/numbers/:id', async (req, res) => {
-  
-});
-router.get('/letters/:id', async (req, res) => {
-  
-});
-router.get('/shapes/:id', async (req, res) => {
-  
-});
+// GET all shapes
+router.get('/shapes', async (req, res) => {});
 
-router.get('/login', (req, res) => {
+// GET login
+router.get('/login', (req, res) => {});
 
-});
-
-router.get('/signup', (req, res) => {
-
-});
+// GET signup
+router.get('/signup', (req, res) => {});
 
 module.exports = router;
