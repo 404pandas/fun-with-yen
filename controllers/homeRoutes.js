@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { withoutGuard } = require('../utils/authGuard');
 
 // GET all numbers
 router.get('/numbers', async (req, res) => {});
@@ -10,9 +11,9 @@ router.get('/letters', async (req, res) => {});
 router.get('/shapes', async (req, res) => {});
 
 // GET login
-router.get('/login', (req, res) => {});
+router.get('/login', withoutGuard, (req, res) => {});
 
 // GET signup
-router.get('/signup', (req, res) => {});
+router.get('/signup', withoutGuard, (req, res) => {});
 
 module.exports = router;

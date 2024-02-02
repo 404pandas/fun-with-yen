@@ -8,4 +8,13 @@ const withGuard = (req, res, next) => {
   }
 };
 
-module.exports = { withGuard };
+// login/signup route redirect that require a logged in user
+const withoutGuard = (req, res, next) => {
+  if (!req.session.logged_in) {
+    next();
+  } else {
+    res.redirect('/');
+  }
+};
+
+module.exports = { withGuard, withoutGuard };
