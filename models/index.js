@@ -1,7 +1,9 @@
 const User = require('./User');
 const Letter = require('./Letter');
+const GuidedLetter = require('./GuidedLetter');
 const Shape = require('./Shape');
 const Number = require('./Number');
+const GuidedShape = require('./GuidedShape');
 const Favorites = require('./Favorites');
 
 User.hasMany(Favorites, { foreignKey: 'user_id', onDelete: 'CASCADE' });

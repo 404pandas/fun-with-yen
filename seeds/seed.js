@@ -1,9 +1,19 @@
 const sequelize = require('../config/connection');
-const { User, Number, Shape, Letter, Favorites } = require('../models');
+const {
+  User,
+  Number,
+  Shape,
+  Letter,
+  Favorites,
+  GuidedNumber,
+  GuidedLetter,
+} = require('../models');
 
 const userData = require('./userData.json');
 const numberData = require('./numberData.json');
 const shapeData = require('./shapeData.json');
+const guidedNumberData = require('./guidedNumberData.json');
+const guidedLetterData = require('./guidedLetterData.json');
 const letterData = require('./letterData.json');
 const favoritesData = require('./favoriteData.json');
 
@@ -30,6 +40,18 @@ const seedDatabase = async () => {
   for (const shape of shapeData) {
     await Shape.create({
       ...shape,
+      userId: users[Math.floor(Math.random() * users.length)].id,
+    });
+  }
+  for (const guidedLetter of guidedLetterData) {
+    await GuidedLetter.create({
+      ...guidedLetter,
+      userId: users[Math.floor(Math.random() * users.length)].id,
+    });
+  }
+  for (const guidedNumber of guidedNumberData) {
+    await GuidedNumber.create({
+      ...guidedNumber,
       userId: users[Math.floor(Math.random() * users.length)].id,
     });
   }
