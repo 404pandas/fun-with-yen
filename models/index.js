@@ -1,9 +1,9 @@
 const User = require('./User');
 const Letter = require('./Letter');
 const GuidedLetter = require('./GuidedLetter');
+const GuidedNumber = require('./GuidedNumber');
 const Shape = require('./Shape');
 const Number = require('./Number');
-const GuidedShape = require('./GuidedShape');
 const Favorites = require('./Favorites');
 
 User.hasMany(Favorites, { foreignKey: 'user_id', onDelete: 'CASCADE' });
@@ -17,4 +17,12 @@ Letter.hasMany(Favorites, { foreignKey: 'letter_id', onDelete: 'CASCADE' });
 // Shape.hasMany(Favorites, { foreignKey: 'shape_id', onDelete: 'CASCADE' });
 // Number.hasMany(Favorites, { foreignKey: 'number_id', onDelete: 'CASCADE' });
 
-module.exports = { User, Letter, Shape, Number, Favorites };
+module.exports = {
+  User,
+  Letter,
+  Shape,
+  Number,
+  Favorites,
+  GuidedLetter,
+  GuidedNumber,
+};

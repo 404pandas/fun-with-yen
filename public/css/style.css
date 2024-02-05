@@ -9,8 +9,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Add Later", sans-serif;
+  font-family: 'Add Later', sans-serif;
   color: var(--test-color);
   line-height: 1.5;
   font-size: 16px;
+}
+
+img {
+  width: 50px !important;
+  height: 70px !important;
 }
