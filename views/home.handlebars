@@ -6,22 +6,33 @@
 
   {{#each shapes as |shape|}}
     <div>
-      <h6>{{shape.name}}</h6>
+    {{> items}}
     </div>
   {{/each}}
   <h5>Numbers</h5>
 
   {{#each numbers as |number|}}
     <div>
-      <h6>{{number.name}}</h6>
+    {{> items}}
 
+    </div>
+  {{/each}}
+  <h5>Guided Numbers</h5>
+  {{#each guidedNumbers as |number|}}
+    <div>
+    {{> items}}
     </div>
   {{/each}}
   <h5>Letters</h5>
   {{#each letters as |letter|}}
     <div>
-      <h6>{{letter.name}}</h6>
-      <img src={{letter.file_path}} />
+    {{> items}}
+    </div>
+  {{/each}}
+  <h5>Guided Letters</h5>
+  {{#each guidedLetters as |letter|}}
+    <div>
+    {{> items}}
     </div>
   {{/each}}
 </div>

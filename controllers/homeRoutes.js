@@ -1,5 +1,11 @@
 const router = require('express').Router();
-const { Shape, Letter, Number } = require('../models/');
+const {
+  Shape,
+  Letter,
+  Number,
+  GuidedLetter,
+  GuidedNumber,
+} = require('../models/');
 const { withoutGuard } = require('../utils/authGuard');
 
 // GET home
@@ -8,15 +14,25 @@ router.get('/', async (req, res) => {
     const shapesData = await Shape.findAll();
     const lettersData = await Letter.findAll();
     const numbersData = await Number.findAll();
+    const guidedLettersData = await GuidedLetter.findAll();
+    const guidedNumbersData = await GuidedNumber.findAll();
 
     const shapes = shapesData.map((shape) => shape.get({ plain: true }));
     const letters = lettersData.map((letter) => letter.get({ plain: true }));
     const numbers = numbersData.map((number) => number.get({ plain: true }));
+    const guidedLetters = guidedLettersData.map((guidedLetter) =>
+      guidedLetter.get({ plain: true })
+    );
+    const guidedNumbers = guidedNumbersData.map((guidedNumber) =>
+      guidedNumber.get({ plain: true })
+    );
 
     res.render('home', {
       shapes,
       letters,
       numbers,
+      guidedLetters,
+      guidedNumbers,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {

@@ -1,12 +1,12 @@
 [
-  { "name": "1", "file_path": "" },
-  { "name": "2", "file_path": "" },
-  { "name": "3", "file_path": "" },
-  { "name": "4", "file_path": "" },
-  { "name": "5", "file_path": "" },
-  { "name": "6", "file_path": "" },
-  { "name": "7", "file_path": "" },
-  { "name": "8", "file_path": "" },
-  { "name": "9", "file_path": "" },
-  { "name": "10", "file_path": "" }
+  { "name": "1", "file_path": "/images/numbers/guided-1.svg" },
+  { "name": "2", "file_path": "/images/numbers/guided-2.svg" },
+  { "name": "3", "file_path": "/images/numbers/guided-3.svg" },
+  { "name": "4", "file_path": "/images/numbers/guided-4.svg" },
+  { "name": "5", "file_path": "/images/numbers/guided-5.svg" },
+  { "name": "6", "file_path": "/images/numbers/guided-6.svg" },
+  { "name": "7", "file_path": "/images/numbers/guided-7.svg" },
+  { "name": "8", "file_path": "/images/numbers/guided-8.svg" },
+  { "name": "9", "file_path": "/images/numbers/guided-9.svg" },
+  { "name": "0", "file_path": "/images/numbers/guided-0.svg" }
 ]
