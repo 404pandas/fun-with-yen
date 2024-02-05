@@ -135,7 +135,7 @@ Once the app is functional, screenshots will be added in this section.
 
 - [ ] Front End
 
-  - [ ] User Auth
+  - [x] User Auth
   - [ ] User Profile Page
     - [ ] Routing
     - [ ] Styling
@@ -147,9 +147,8 @@ Once the app is functional, screenshots will be added in this section.
   - [x] Models
   - [x] Seeds
   - [ ] apiRouting
-  - [ ] userRouting
+  - [x] userRouting
   - [ ] traceableItemsRouting
-  - [ ] Migrate from MongoDB to Postgres (benefit more from a relational database)
 
 #### Future Development
 
