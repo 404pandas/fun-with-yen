@@ -13,7 +13,12 @@ router.get('/', async (req, res) => {
     const letters = lettersData.map((letter) => letter.get({ plain: true }));
     const numbers = numbersData.map((number) => number.get({ plain: true }));
 
-    res.render('home', { shapes, letters, numbers });
+    res.render('home', {
+      shapes,
+      letters,
+      numbers,
+      loggedIn: req.session.loggedIn,
+    });
   } catch (err) {
     res.status(500).json(err);
   }

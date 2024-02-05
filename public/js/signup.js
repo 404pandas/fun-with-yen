@@ -32,4 +32,8 @@ const signupFormHandler = async (event) => {
 // event listener for signup form submit
 document
   .querySelector('.signup-form')
-  .addEventListener('submit', signupFormHandler);
+  .addEventListener(
+    'click',
+    signupFormHandler,
+    console.log('Signup button clicked!')
+  );

@@ -18,6 +18,8 @@ router.post('/', async (req, res) => {
 
       res.status(200).json(dbUserData);
     });
+    console.log('User created successfully!');
+    console.log(req.session);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -60,6 +62,8 @@ router.post('/login', async (req, res) => {
         .status(200)
         .json({ user: dbUserData, message: 'You are now logged in!' });
     });
+    console.log('Logged in successfully!');
+    console.log(req.session);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -73,6 +77,8 @@ router.post('/logout', (req, res) => {
     req.session.destroy(() => {
       res.status(204).json({ message: 'You are now logged out!' });
     });
+    console.log('Logged out successfully!');
+    console.log(req.session);
   } else {
     res.status(404).end();
   }

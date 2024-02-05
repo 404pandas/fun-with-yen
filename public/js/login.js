@@ -21,10 +21,16 @@ const loginFormHandler = async (event) => {
     } else {
       alert('Failed to log in.');
     }
+  } else {
+    alert('must enter username and password!');
   }
 };
 
 // event listener for login form submit
 document
   .querySelector('.login-form')
-  .addEventListener('submit', loginFormHandler);
+  .addEventListener(
+    'click',
+    loginFormHandler,
+    console.log('Login button clicked!')
+  );
