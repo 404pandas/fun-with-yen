@@ -1,507 +1,86 @@
 [
   {
     "user_id": 1,
-    "letter_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "number_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ]
+    "letter_id": 3,
+    "number_id": 3,
+    "shape_id": 3
   },
   {
     "user_id": 2,
-    "letter_id": [
-      {
-        "id": 4
-      },
-      {
-        "id": 5
-      },
-      {
-        "id": 6
-      }
-    ],
-    "number_id": [
-      {
-        "id": 4
-      },
-      {
-        "id": 5
-      },
-      {
-        "id": 6
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 4
-      },
-      {
-        "id": 5
-      },
-      {
-        "id": 6
-      }
-    ]
+    "letter_id": 4,
+    "number_id": 4,
+    "shape_id": 4
   },
   {
     "user_id": 3,
-    "letter_id": [
-      {
-        "id": 7
-      },
-      {
-        "id": 8
-      },
-      {
-        "id": 9
-      }
-    ],
-    "number_id": [
-      {
-        "id": 7
-      },
-      {
-        "id": 8
-      },
-
-      {
-        "id": 9
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 7
-      },
-      {
-        "id": 8
-      },
-      {
-        "id": 9
-      }
-    ]
+    "letter_id": 9,
+    "number_id": 9,
+    "shape_id": 9
   },
   {
     "user_id": 4,
-    "letter_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "number_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ]
+    "letter_id": 3,
+    "number_id": 3,
+    "shape_id": 3
   },
   {
     "user_id": 5,
-    "letter_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "number_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ]
+    "letter_id": 3,
+    "number_id": 3,
+    "shape_id": 3
   },
   {
     "user_id": 6,
-    "letter_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "number_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ]
+    "letter_id": 3,
+    "number_id": 3,
+    "shape_id": 3
   },
   {
     "user_id": 7,
-    "letter_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "number_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ]
+    "letter_id": 3,
+    "number_id": 3,
+    "shape_id": 3
   },
   {
     "user_id": 8,
-    "letter_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "number_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ]
+    "letter_id": 3,
+    "number_id": 3,
+    "shape_id": 3
   },
   {
     "user_id": 9,
-    "letter_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "number_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ]
+    "letter_id": 3,
+    "number_id": 3,
+    "shape_id": 3
   },
   {
     "user_id": 10,
-    "letter_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "number_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ]
+    "letter_id": 3,
+    "number_id": 3,
+    "shape_id": 3
   },
   {
     "user_id": 11,
-    "letter_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "number_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ]
+    "letter_id": 3,
+    "number_id": 3,
+    "shape_id": 3
   },
   {
     "user_id": 12,
-    "letter_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "number_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ]
+    "letter_id": 3,
+    "number_id": 3,
+    "shape_id": 3
   },
   {
     "user_id": 13,
-    "letter_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "number_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ]
+    "letter_id": 3,
+    "number_id": 3,
+    "shape_id": 3
   },
   {
     "user_id": 14,
-    "letter_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "number_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ],
-    "shape_id": [
-      {
-        "id": 1
-      },
-      {
-        "id": 2
-      },
-      {
-        "id": 3
-      }
-    ]
+    "letter_id": 3,
+    "number_id": 3,
+    "shape_id": 3
   }
 ]

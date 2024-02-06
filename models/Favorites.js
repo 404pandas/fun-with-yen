@@ -18,33 +18,29 @@ Favorites.init(
         key: 'id',
       },
     },
-    letter_id: [
-      {
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'letter',
-          key: 'id',
-        },
+    letter_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'letter',
+        key: 'id',
       },
-    ],
-    number_id: [
-      {
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'number',
-          key: 'id',
-        },
+    },
+
+    number_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'number',
+        key: 'id',
       },
-    ],
-    shape_id: [
-      {
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'shape',
-          key: 'id',
-        },
+    },
+
+    shape_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'shape',
+        key: 'id',
       },
-    ],
+    },
   },
   {
     sequelize,
