@@ -59,6 +59,11 @@ document.addEventListener('DOMContentLoaded', function () {
   console.log('Carousel initiated');
   console.log(elems);
   var instances = M.Carousel.init(elems);
-  console.log('Carousel stuff and things');
+  console.log(
+    'This is he instances of the carousel, should be an array of objects'
+  );
   console.log(instances);
+  window.alert(
+    'Data loaded, ready to select an itme to trace. Possible partial model that says data loaded? async?'
+  );
 });

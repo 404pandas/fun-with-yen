@@ -1,12 +1,12 @@
 [
-  { "name": "1", "file_path": "" },
-  { "name": "2", "file_path": "" },
-  { "name": "3", "file_path": "" },
-  { "name": "4", "file_path": "" },
-  { "name": "5", "file_path": "" },
-  { "name": "6", "file_path": "" },
-  { "name": "7", "file_path": "" },
-  { "name": "8", "file_path": "" },
-  { "name": "9", "file_path": "" },
-  { "name": "10", "file_path": "" }
+  { "name": "1", "file_path": "/images/numbers/0.png" },
+  { "name": "2", "file_path": "/images/numbers/1.png" },
+  { "name": "3", "file_path": "/images/numbers/2.png" },
+  { "name": "4", "file_path": "/images/numbers/3.png" },
+  { "name": "5", "file_path": "/images/numbers/4.png" },
+  { "name": "6", "file_path": "/images/numbers/5.png" },
+  { "name": "7", "file_path": "/images/numbers/6.png" },
+  { "name": "8", "file_path": "/images/numbers/7.png" },
+  { "name": "9", "file_path": "/images/numbers/8.png" },
+  { "name": "10", "file_path": "/images/numbers/9.png" }
 ]

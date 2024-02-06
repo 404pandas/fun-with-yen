@@ -8,7 +8,6 @@
   <ul id="dropdown-shapes" class="dropdown-content">
     {{#each shapes as |shape|}}
       <div class="carousel carousel-slider" id={{shape}} tabindex="-1">
-        <a>Shape Name: {{name}}</a>
       {{> items}}
       </div>
     {{/each}}
@@ -17,8 +16,7 @@
     <a class='dropdown-trigger btn' href='#' data-target='dropdown-numbers'>Numbers</a>
     <ul id="dropdown-numbers" class="dropdown-content">
       {{#each numbers as |number|}}
-        <div class="carousel carousel-slider" id={{number}} tabindex="-1">
-          <h6>Number Name: {{name}}</h6>
+        <div class="carousel carousel-slider number-slider-png" id={{number}} tabindex="-1">
         {{> items}}
         </div>
       {{/each}}
@@ -27,7 +25,6 @@
     <ul id="dropdown-guided-numbers" class="dropdown-content">
     {{#each guidedNumbers as |guidedNumber|}}  
       <div class="carousel carousel-slider" id={{guidedNumber}} tabindex="-1">
-        <h6>Guided Number Name: {{name}}</h6>
       {{> items}}
       </div>
     {{/each}}
@@ -37,7 +34,6 @@
   <ul id="dropdown-letters" class="dropdown-content">
   {{#each letters as |letter|}}
     <div class="carousel carousel-slider" id={{letter}} tabindex="-1">
-      <h6>Letter Name: {{name}}</h6>
     {{> items}}
     </div>
   {{/each}}
@@ -47,7 +43,6 @@
   <ul id="dropdown-guided-letters" class="dropdown-content">
   {{#each guidedLetters as |guided_letter|}}
     <div class="carousel carousel-slider" id={{guided_letter}} tabindex="-1">
-      <h6>Guided Letter Name: {{name}}</h6>
     {{> items}}
     </div>
   {{/each}}

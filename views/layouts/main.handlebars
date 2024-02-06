@@ -29,9 +29,10 @@
         <a href='/login'>Login/Signup</a>
       {{/if}}
     </nav>
-    <main>
-      {{{body}}}
-    </main>
+    <div class='container'>
+      <main>
+        {{{body}}}
+      </main></div>
     {{#if loggedIn}}
       <script src='/js/logout.js'></script>
     {{/if}}
