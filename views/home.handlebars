@@ -1,40 +1,56 @@
 <div>
   <h4>Home</h4>
+
   <h5>Select an image to trace</h5>
 
   <h5>Shapes</h5>
+  <a class='dropdown-trigger btn' href='#' data-target='dropdown-shapes'>Shapes</a>
+  <ul id="dropdown-shapes" class="dropdown-content">
+    {{#each shapes as |shape|}}
+      <div class="carousel" id={{shape}} tabindex="-1">
+      {{> items}}
+      </div>
+    {{/each}}
+  </ul>
 
-  {{#each shapes as |shape|}}
-    <div>
-    {{> items}}
-    </div>
-  {{/each}}
-  <h5>Numbers</h5>
+    <a class='dropdown-trigger btn' href='#' data-target='dropdown-numbers'>Numbers</a>
+    <ul id="dropdown-numbers" class="dropdown-content">
+      {{#each numbers as |number|}}
+        <li id={{number}} tabindex="-1">
+          <h6>Number Name: {{name}}</h6>
+        {{> items}}
+        </li>
+      {{/each}}
+    </ul>
+    <a class='dropdown-trigger btn' href='#' data-target='dropdown-guided-numbers'>Guided Numbers</a>
+    <ul id="dropdown-guided-numbers" class="dropdown-content">
+    {{#each guidedNumbers as |guidedNumber|}}  
+      <li id={{guidedNumber}} tabindex="-1">
+        <h6>Guided Number Name: {{name}}</h6>
+      {{> items}}
+      </li>
+    {{/each}}
+    </ul>
 
-  {{#each numbers as |number|}}
-    <div>
-    {{> items}}
-
-    </div>
-  {{/each}}
-  <h5>Guided Numbers</h5>
-  {{#each guidedNumbers as |number|}}
-    <div>
-    {{> items}}
-    </div>
-  {{/each}}
-  <h5>Letters</h5>
+   <a class='dropdown-trigger btn' href='#' data-target='dropdown-letters'>Letters</a>
+  <ul id="dropdown-letters" class="dropdown-content">
   {{#each letters as |letter|}}
-    <div>
+    <li id={{letter}} tabindex="-1">
+      <h6>Letter Name: {{name}}</h6>
     {{> items}}
-    </div>
+    </li>
   {{/each}}
-  <h5>Guided Letters</h5>
-  {{#each guidedLetters as |letter|}}
-    <div>
+  </ul>
+
+   <a class='dropdown-trigger btn' href='#' data-target='dropdown-guided-letters'>Guided Letters</a>
+  <ul id="dropdown-guided-letters" class="dropdown-content">
+  {{#each guidedLetters as |guided_letter|}}
+    <li id={{guided_letter}} tabindex="-1">
+      <h6>Guided Letter Name: {{name}}</h6>
     {{> items}}
-    </div>
+    </li>
   {{/each}}
+  </ul>
 </div>
 
 <script src='/js/options.js'></script>

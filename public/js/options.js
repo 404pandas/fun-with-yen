@@ -42,3 +42,23 @@ const viewShapes = async (id, shapeData) => {
     .then(document.location.reload())
     .catch((err) => console.log(err));
 };
+
+// Modal Javascript
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.dropdown-trigger');
+  console.log('Modal initiated');
+  console.log(elems);
+  var instances = M.Dropdown.init(elems, options);
+  console.log('Modal stuff and things');
+  console.log(instances);
+});
+
+// Carousel Javascript
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.carousel');
+  console.log('Carousel initiated');
+  console.log(elems);
+  var instances = M.Carousel.init(elems, options);
+  console.log('Carousel stuff and things');
+  console.log(instances);
+});
