@@ -12,6 +12,12 @@ function displaySelectedItemDetails(name, file_path) {
   selectedItemDetailsDiv.innerHTML = detailsHTML;
 }
 
+function passClickedVariables(name, file_path) {
+  const passedName = name;
+  const passedFilePath = file_path;
+  displaySelectedItemDetails(passedName, passedFilePath);
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.carousel');
   var instances = M.Carousel.init(elems);

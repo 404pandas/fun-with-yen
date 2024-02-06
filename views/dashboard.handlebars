@@ -1,4 +1,32 @@
 <div>
-  <h5>Dashboard</h5>
+  <h6>Hi there, {{username}}!</h6>
+  <div id='favorites'>      <h6>Saved Letters</h6>
+
+    <div id='saved-letters' class="saved-items">
+      {{#each savedLetters as |savedLetter|}}
+        {{> savedItems}}
+      {{/each}}
+      {{#each savedGuidedLetters as |savedGuidedLetter|}}
+        {{> savedItems}}
+      {{/each}}
+    </div>      <h6>Saved Numbers</h6>
+
+    <div id='saved-numbers' class="saved-items">
+      {{#each savedNumbers as |savedNumber|}}
+        {{> savedItems}}
+      {{/each}}
+      {{#each savedGuidedNumbers as |savedGuidedNumber|}}
+        {{> savedItems}}
+      {{/each}}
+    </div>      <h6>Saved Shapes</h6>
+
+    <div id='saved-shapes' class="saved-items">
+      {{#each savedShapes as |savedShape|}}
+        {{> savedItems}}
+      {{/each}}
+    </div>
+
+  </div>
 </div>
 <script src='/js/favorites.js'></script>
+<script src="/js/home.js"></script>

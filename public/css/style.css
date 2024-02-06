@@ -143,6 +143,15 @@ img {
   justify-content: space-around;
 }
 
+#favorites {
+  display: flex;
+  flex-direction: column;
+}
+
+.saved-items {
+  display: flex;
+}
+
 @media screen and (max-width: 768px) {
   #canvas {
     max-height: 30vh;
