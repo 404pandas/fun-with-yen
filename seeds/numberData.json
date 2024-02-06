@@ -1,12 +1,12 @@
 [
-  { "name": "1", "file_path": "/images/numbers/0.png" },
-  { "name": "2", "file_path": "/images/numbers/1.png" },
-  { "name": "3", "file_path": "/images/numbers/2.png" },
-  { "name": "4", "file_path": "/images/numbers/3.png" },
-  { "name": "5", "file_path": "/images/numbers/4.png" },
-  { "name": "6", "file_path": "/images/numbers/5.png" },
-  { "name": "7", "file_path": "/images/numbers/6.png" },
-  { "name": "8", "file_path": "/images/numbers/7.png" },
-  { "name": "9", "file_path": "/images/numbers/8.png" },
-  { "name": "10", "file_path": "/images/numbers/9.png" }
+  { "name": "0", "file_path": "/images/numbers/0.svg" },
+  { "name": "1", "file_path": "/images/numbers/1.svg" },
+  { "name": "2", "file_path": "/images/numbers/2.svg" },
+  { "name": "3", "file_path": "/images/numbers/3.svg" },
+  { "name": "4", "file_path": "/images/numbers/4.svg" },
+  { "name": "5", "file_path": "/images/numbers/5.svg" },
+  { "name": "6", "file_path": "/images/numbers/6.svg" },
+  { "name": "7", "file_path": "/images/numbers/7.svg" },
+  { "name": "8", "file_path": "/images/numbers/8.svg" },
+  { "name": "9", "file_path": "/images/numbers/9.svg" }
 ]

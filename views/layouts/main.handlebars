@@ -20,13 +20,16 @@
   </head>
 
   <body>
-    <nav>
-      <a href='/'>Home</a>
-      <a href='/dashboard'>Dashboard</a>
+    <nav id='nav'>
+      <a href='/'><img src='/images/icons/home.svg' alt='home icon' /></a>
+      <a href='/dashboard'><img
+          src='/images/icons/dashboard.svg'
+          alt='dashboard icon'
+        /></a>
       {{#if loggedIn}}
-        <button id='logout'>Logout</button>
+        <button id='logout' class="logout-button"><img src="/images/icons/logout.svg" alt"logout icon"></button>
       {{else}}
-        <a href='/login'>Login/Signup</a>
+        <a href='/login' id='login-icon'><img src="/images/icons/login.svg" alt="logout-icon"></a>
       {{/if}}
     </nav>
     <div class='container'>

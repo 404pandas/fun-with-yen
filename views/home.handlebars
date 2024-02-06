@@ -6,50 +6,72 @@
     </div>
   </div>
   <h5>Select a category to trace:</h5>
-
-  <a class='dropdown-trigger btn' href='#' data-target='dropdown-shapes'>Shapes</a>
+<div id="dropdown-buttons-container">
+  {{!-- Shapes --}}
+  <a class='dropdown-trigger btn' href='#' data-target='dropdown-shapes'>
+    <img src="/images/shapes/circle.svg" alt="circle icon" class="dropdown-icons" />
+    <img src="/images/shapes/square.svg" alt="square icon" class="dropdown-icons" />
+  </a>
   <ul id="dropdown-shapes" class="dropdown-content">
     {{#each shapes as |shape|}}
-      <div class="carousel carousel-slider" id={{shape}} tabindex="-1">
+    <div class="carousel carousel-slider" id={{shape}} tabindex="-1">
       {{> items}}
-      </div>
+    </div>
     {{/each}}
   </ul>
 
-    <a class='dropdown-trigger btn' href='#' data-target='dropdown-numbers'>Numbers</a>
+  {{!-- Numbers --}}
+  <a class='dropdown-trigger btn' href='#' data-target='dropdown-numbers'>
+    <img src="/images/numbers/1.svg" alt="1 icon" class="dropdown-icons" />
+    <img src="/images/numbers/2.svg" alt="2 icon" class="dropdown-icons" />
+    </a>
     <ul id="dropdown-numbers" class="dropdown-content">
       {{#each numbers as |number|}}
-        <div class="carousel carousel-slider number-slider-png" id={{number}} tabindex="-1">
+      <div class="carousel carousel-slider" id={{number}} tabindex="-1">
         {{> items}}
-        </div> 
+      </div>
       {{/each}}
     </ul>
-    <a class='dropdown-trigger btn' href='#' data-target='dropdown-guided-numbers'>Guided Numbers</a>
+
+    {{!-- Guided Numbers --}}
+    <a class='dropdown-trigger btn' href='#' data-target='dropdown-guided-numbers'>
+      <img src="/images/numbers/guided-1.svg" alt="guided 1 icon" class="dropdown-icons" class="dropdown-icons" />
+      <img src="/images/numbers/guided-2.svg" alt="guided 2 icon" class="dropdown-icons"/>
+    </a>
     <ul id="dropdown-guided-numbers" class="dropdown-content">
-    {{#each guidedNumbers as |guidedNumber|}}  
+      {{#each guidedNumbers as |guidedNumber|}}
       <div class="carousel carousel-slider" id={{guidedNumber}} tabindex="-1">
-      {{> items}}
+        {{> items}}
       </div>
-    {{/each}}
+      {{/each}}
     </ul>
 
-   <a class='dropdown-trigger btn' href='#' data-target='dropdown-letters'>Letters</a>
-  <ul id="dropdown-letters" class="dropdown-content">
-  {{#each letters as |letter|}}
-    <div class="carousel carousel-slider" id={{letter}} tabindex="-1">
-    {{> items}}
-    </div>
-  {{/each}}
-  </ul>
+    {{!-- Letters --}}
+    <a class='dropdown-trigger btn' href='#' data-target='dropdown-letters'>
+      <img src="/images/letters/cap-A.svg" alt="capital A icon" class="dropdown-icons" />
+      <img src="/images/letters/low-A.svg" alt="lowercase a icon" class="dropdown-icons" />
+    </a>
+    <ul id="dropdown-letters" class="dropdown-content">
+      {{#each letters as |letter|}}
+      <div class="carousel carousel-slider" id={{letter}} tabindex="-1">
+        {{> items}}
+      </div>
+      {{/each}}
+    </ul>
 
-   <a class='dropdown-trigger btn' href='#' data-target='dropdown-guided-letters'>Guided Letters</a>
-  <ul id="dropdown-guided-letters" class="dropdown-content">
-  {{#each guidedLetters as |guided_letter|}}
-    <div class="carousel carousel-slider" id={{guided_letter}} tabindex="-1">
-    {{> items}}
+    {{!-- Guided Letters --}}
+    <a class='dropdown-trigger btn' href='#' data-target='dropdown-guided-letters'>
+      <img src="/images/letters/guided-cap-A.svg" alt="guided capital A icon" class="dropdown-icons" />
+      <img src="/images/letters/guided-low-a.svg" alt="guided lowercase a icon" class="dropdown-icons" />
+    </a>
+    <ul id="dropdown-guided-letters" class="dropdown-content">
+      {{#each guidedLetters as |guided_letter|}}
+      <div class="carousel carousel-slider" id={{guided_letter}} tabindex="-1">
+        {{> items}}
+      </div>
+      {{/each}}
+    </ul>
     </div>
-  {{/each}}
-  </ul>
 </div>
 
 <script src='/js/options.js'></script>
