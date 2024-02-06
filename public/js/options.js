@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.dropdown-trigger');
   console.log('Modal initiated');
   console.log(elems);
-  var instances = M.Dropdown.init(elems, options);
+  var instances = M.Dropdown.init(elems);
   console.log('Modal stuff and things');
   console.log(instances);
 });
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.carousel');
   console.log('Carousel initiated');
   console.log(elems);
-  var instances = M.Carousel.init(elems, options);
+  var instances = M.Carousel.init(elems);
   console.log('Carousel stuff and things');
   console.log(instances);
 });
