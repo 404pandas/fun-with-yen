@@ -61,7 +61,8 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () =>
     console.log(
-      `Now listening on ${PORT}. Visit site at http://localhost:${PORT}`
+      `Visit local site at http://localhost:${PORT}. Visit API data at http://localhost:${PORT}/api/letters or (||)
+      /api/letters/ can be api/guided-letters/, /api/numbers/, /api/guided-numbers/, /api/shapes/, or /api/favorites/.`
     )
   );
 });
