@@ -12,20 +12,30 @@ const { withoutGuard } = require('../utils/authGuard');
 router.get('/', async (req, res) => {
   try {
     const shapesData = await Shape.findAll();
+    console.log('Shape data found');
     const lettersData = await Letter.findAll();
+    console.log('Letter data found');
     const numbersData = await Number.findAll();
+    console.log('Number data found');
     const guidedLettersData = await GuidedLetter.findAll();
+    console.log('Guided letter data found');
     const guidedNumbersData = await GuidedNumber.findAll();
+    console.log('Guided number data found');
 
     const shapes = shapesData.map((shape) => shape.get({ plain: true }));
+    console.log('Shapes mapped');
     const letters = lettersData.map((letter) => letter.get({ plain: true }));
+    console.log('Letters mapped');
     const numbers = numbersData.map((number) => number.get({ plain: true }));
+    console.log('Numbers mapped');
     const guidedLetters = guidedLettersData.map((guidedLetter) =>
       guidedLetter.get({ plain: true })
     );
+    console.log('Guided letters mapped');
     const guidedNumbers = guidedNumbersData.map((guidedNumber) =>
       guidedNumber.get({ plain: true })
     );
+    console.log('Guided numbers mapped');
 
     res.render('home', {
       shapes,
