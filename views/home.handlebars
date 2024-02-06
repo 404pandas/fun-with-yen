@@ -7,7 +7,8 @@
   <a class='dropdown-trigger btn' href='#' data-target='dropdown-shapes'>Shapes</a>
   <ul id="dropdown-shapes" class="dropdown-content">
     {{#each shapes as |shape|}}
-      <div class="carousel" id={{shape}} tabindex="-1">
+      <div class="carousel carousel-slider" id={{shape}} tabindex="-1">
+        <a>Shape Name: {{name}}</a>
       {{> items}}
       </div>
     {{/each}}
@@ -16,39 +17,39 @@
     <a class='dropdown-trigger btn' href='#' data-target='dropdown-numbers'>Numbers</a>
     <ul id="dropdown-numbers" class="dropdown-content">
       {{#each numbers as |number|}}
-        <li id={{number}} tabindex="-1">
+        <div class="carousel carousel-slider" id={{number}} tabindex="-1">
           <h6>Number Name: {{name}}</h6>
         {{> items}}
-        </li>
+        </div>
       {{/each}}
     </ul>
     <a class='dropdown-trigger btn' href='#' data-target='dropdown-guided-numbers'>Guided Numbers</a>
     <ul id="dropdown-guided-numbers" class="dropdown-content">
     {{#each guidedNumbers as |guidedNumber|}}  
-      <li id={{guidedNumber}} tabindex="-1">
+      <div class="carousel carousel-slider" id={{guidedNumber}} tabindex="-1">
         <h6>Guided Number Name: {{name}}</h6>
       {{> items}}
-      </li>
+      </div>
     {{/each}}
     </ul>
 
    <a class='dropdown-trigger btn' href='#' data-target='dropdown-letters'>Letters</a>
   <ul id="dropdown-letters" class="dropdown-content">
   {{#each letters as |letter|}}
-    <li id={{letter}} tabindex="-1">
+    <div class="carousel carousel-slider" id={{letter}} tabindex="-1">
       <h6>Letter Name: {{name}}</h6>
     {{> items}}
-    </li>
+    </div>
   {{/each}}
   </ul>
 
    <a class='dropdown-trigger btn' href='#' data-target='dropdown-guided-letters'>Guided Letters</a>
   <ul id="dropdown-guided-letters" class="dropdown-content">
   {{#each guidedLetters as |guided_letter|}}
-    <li id={{guided_letter}} tabindex="-1">
+    <div class="carousel carousel-slider" id={{guided_letter}} tabindex="-1">
       <h6>Guided Letter Name: {{name}}</h6>
     {{> items}}
-    </li>
+    </div>
   {{/each}}
   </ul>
 </div>
