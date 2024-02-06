@@ -1,6 +1,10 @@
 <div>
   <h4>Home</h4>
-
+  <div id="canvas">
+    <div id="selectedItemDetails">
+      <!-- Display clicked item details here -->
+    </div>
+  </div>
   <h5>Select a category to trace:</h5>
 
   <a class='dropdown-trigger btn' href='#' data-target='dropdown-shapes'>Shapes</a>
@@ -17,7 +21,7 @@
       {{#each numbers as |number|}}
         <div class="carousel carousel-slider number-slider-png" id={{number}} tabindex="-1">
         {{> items}}
-        </div>
+        </div> 
       {{/each}}
     </ul>
     <a class='dropdown-trigger btn' href='#' data-target='dropdown-guided-numbers'>Guided Numbers</a>
@@ -49,3 +53,4 @@
 </div>
 
 <script src='/js/options.js'></script>
+<script src="/js/home.js"></script>

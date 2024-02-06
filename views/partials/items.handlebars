@@ -1,5 +1,12 @@
-<a class='carousel-item' href='#'><div class='container dropdown'>
-
+<a
+  class='carousel-item'
+  href='#'
+  onclick="displaySelectedItemDetails('{{name}}', '{{file_path}}')"
+>
+  <div class='container dropdown'>
     <div className='item-continer'>
       <h6>{{name}}</h6>
-      <img src={{file_path}} /></div></div></a>
+      <img src={{file_path}} />
+    </div>
+  </div>
+</a>

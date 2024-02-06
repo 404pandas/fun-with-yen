@@ -35,7 +35,7 @@ img {
   position: relative !important;
   top: 10% !important;
   left: 0vw !important;
-  width: 100vw !important;
+  width: 80vw !important;
   height: 25vh !important;
   overflow-y: scroll !important;
 }
@@ -75,4 +75,25 @@ img {
 .dropdown-content::-webkit-scrollbar-track {
   background-color: pink;
   border-radius: 10px;
+}
+
+#canvas {
+  border: 1px solid #000;
+  width: 80vw;
+  height: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#selectedItemDetails {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#current-trace {
+  width: 80% !important;
+  height: 80% !important;
 }
