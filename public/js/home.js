@@ -15,7 +15,9 @@ function displaySelectedItemDetails(name, file_path) {
 function passClickedVariables(name, file_path) {
   const passedName = name;
   const passedFilePath = file_path;
-  displaySelectedItemDetails(passedName, passedFilePath);
+  localStorage.setItem('passedName', passedName);
+  localStorage.setItem('passedFilePath', passedFilePath);
+  displaySelectedItemDetails(name, file_path);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
