@@ -63,7 +63,11 @@ router.post('/login', async (req, res) => {
       req.session.username = dbUserData.username;
       res
         .status(200)
-        .json({ user: dbUserData, message: 'You are now logged in!' });
+        .json({
+          user: dbUserData,
+          message: 'You are now logged in!',
+          token: req.session.id,
+        });
     });
     console.log('Logged in successfully!');
     // console.log(req.session);

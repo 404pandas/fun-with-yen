@@ -21,6 +21,20 @@ function passClickedVariables(name, file_path) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Check if there are stored variables in localStorage
+  const passedName = localStorage.getItem('passedName');
+  const passedFilePath = localStorage.getItem('passedFilePath');
+
+  // If both name and file_path are present, display the selected item's details
+  if (passedName && passedFilePath) {
+    displaySelectedItemDetails(passedName, passedFilePath);
+    // Remove stored values after using them
+    localStorage.removeItem('passedName');
+    localStorage.removeItem('passedFilePath');
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.carousel');
   var instances = M.Carousel.init(elems);
 });
