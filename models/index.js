@@ -11,17 +11,35 @@ User.hasMany(Letter, { foreignKey: 'letter_id', onDelete: 'CASCADE' });
 User.hasMany(Shape, { foreignKey: 'shape_id', onDelete: 'CASCADE' });
 User.hasMany(Number, { foreignKey: 'number_id', onDelete: 'CASCADE' });
 
-Favorites.belongsTo(User, { foreignKey: 'user_id' });
-Favorites.hasMany(Letter, { foreignKey: 'letter_id' });
-Favorites.hasMany(Shape, { foreignKey: 'shape_id' });
-Favorites.hasMany(Number, { foreignKey: 'number_id' });
+// Favorites.belongsTo(User, { foreignKey: 'user_id' });
+User.belongsToMany(Letter, {
+  through: 'favorite_letters',
+  foreignKey: 'user_id',
+});
+User.belongsToMany(Shape, {
+  through: 'favorite_shapes',
+  foreignKey: 'user_id',
+});
+User.belongsToMany(Number, {
+  through: 'favorite_numbers',
+  foreignKey: 'user_id',
+});
 
-Letter.belongsTo(Favorites, { foreignKey: 'letter_id', onDelete: 'CASCADE' });
-Letter.belongsTo(User, { foreignKey: 'user_id' });
-Shape.belongsTo(Favorites, { foreignKey: 'shape_id', onDelete: 'CASCADE' });
-Shape.belongsTo(User, { foreignKey: 'user_id' });
-Number.belongsTo(Favorites, { foreignKey: 'number_id', onDelete: 'CASCADE' });
-Number.belongsTo(User, { foreignKey: 'user_id' });
+Letter.belongsToMany(User, {
+  through: 'favorite_letters',
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
+Shape.belongsToMany(User, {
+  through: 'favorite_shapes',
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
+Number.belongsToMany(User, {
+  through: 'favorite_numbers',
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
 
 module.exports = {
   User,
