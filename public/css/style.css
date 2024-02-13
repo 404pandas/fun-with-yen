@@ -152,6 +152,11 @@ img {
   display: flex;
 }
 
+#star-icon-div {
+  position: absolute;
+  z-index: 400;
+}
+
 @media screen and (max-width: 768px) {
   #canvas {
     max-height: 30vh;

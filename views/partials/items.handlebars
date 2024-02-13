@@ -1,3 +1,19 @@
+<div id='star-icon-div'>{{#if hasFavorited}}
+    <img
+      src='/images/icons/liked-star.svg'
+      alt='filled in star icon'
+      class='favorite-icon'
+      id='has-favorited'
+    />
+  {{else}}
+    <img
+      src='/images/icons/unliked-star.svg'
+      alt='empty star icon'
+      class='favorite-icon'
+      id='not-favorited'
+    />
+  {{/if}}
+</div>
 <a
   class='carousel-item saved-click'
   onclick="displaySelectedItemDetails('{{name}}', '{{file_path}}')"
