@@ -100,6 +100,7 @@ const seedDatabase = async () => {
         console.error(`Number with id ${numberId} not found.`);
         continue;
       }
+      // TODO- research .save() method from sequelize, need to hard code out saved models and then use a getter and setter on the model to parse the data then stringify after manipulation.
       await newFavorite.addNumbers([number]);
     }
     // Associate shapes with the favorite
